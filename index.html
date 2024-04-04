@@ -1,0 +1,24 @@
+<form action="thanks.php" method="post">
+    <p>
+        <strong>Nom<span style="color: #ff0000;">*</span>:</strong>
+        <input id="nom" name="nom" size="28" type="text" required />
+        <strong>Prénom:</strong>
+        <input id="prenom" name="prenom" size="27" type="text" />
+        <br /><br />
+        <strong>E-mail<span style="color: #ff0000;">*</span>:</strong>
+        <input id="mail" name="mail" size="81" type="email" required />
+        <strong>Téléphone:</strong>
+        <input id="telephone" name="telephone" size="27" type="tel" />
+        <br /><br />
+        <strong>Sujet:</strong>
+        <select id="sujet" name="sujet">
+            <option value="question">Question générale</option>
+            <option value="probleme">Problème technique</option>
+            <option value="autre">Autre</option>
+        </select>
+    </p>
+    <p>Message<span style="color: #ff0000;">*</span>:</p>
+    <textarea id="message" cols="52" rows="7" name="message" required></textarea>
+    <input type="reset" value="Effacer" />
+    <input type="submit" value="Envoyer" />
+</form>
